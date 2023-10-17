@@ -1,0 +1,98 @@
+.fullsize {
+    width: 100%;
+    height: 100%;
+}
+.button
+{
+    border: 4px solid var(--button-border-color);
+    background-color: var(--button-bg-color);
+    color: var(--button-font-color);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;    
+
+    font-family: monospace;
+}
+
+.button:hover {
+    border: 4px solid rgb(36, 36, 36);
+    background-color: #4d4d4d;
+    color: #909090;
+}
+
+.button_input:not(:disabled)+.button:hover {
+    background-color: rgb(202, 202, 202);
+    border-color: black;
+    color: black;
+}
+
+.button_input {
+    display: none;
+}
+
+/* ButtonGroup */
+.buttongroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    /* border: solid black 4px; */
+    border-radius: calc(var(--menu-height)/4);
+    /* background-color: white; */
+
+    overflow: 'clip';
+}
+
+/* .buttongroup input:checked+.button {
+    background-color: grey;
+    border-color: rgb(32, 32, 32);
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+}
+
+.buttongroup input:checked:not(:disabled):hover+.button {
+    background-color: wheat;
+    border-color: black;
+    color: black;
+}
+
+.buttongroup input:not(:checked)+.button {
+    background-color: black;
+    border-color:  rgb(32 32 32) ;
+    color: rgb(200 190 174);
+}
+
+.buttongroup input:not(:checked):not(:disabled):hover+.button {
+    background-color: rgb(55 65 81);
+    border-color: rgb(76, 90, 112);
+    color: white;
+} */
+
+/* Mode */
+.buttongroup-item {
+    height: 26px;
+    width: 96px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: large;
+
+    background-size: cover;
+}
+.buttongroup .buttongroup-item:first-of-type .button {
+    border-top-left-radius: calc(var(--menu-height)/4);
+    border-bottom-left-radius: calc(var(--menu-height)/4);
+}
+.buttongroup .buttongroup-item:not(:first-of-type) .button {
+    margin-left: 0px;
+}
+
+.buttongroup .buttongroup-item:last-of-type .button {
+    border-top-right-radius: calc(var(--menu-height)/4);
+    border-bottom-right-radius: calc(var(--menu-height)/4);
+}
+.buttongroup .buttongroup-item:not(:last-of-type) .button {
+    margin-right: 0px;
+}

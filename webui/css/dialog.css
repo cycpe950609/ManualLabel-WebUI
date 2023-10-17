@@ -1,0 +1,102 @@
+.TD_Background
+{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Top_Dialog
+{
+    width: auto;
+    height: auto;
+    border-radius: calc(var(--toolbar-width)/4);
+    border: solid black 4px;
+    background-color: white;
+}
+
+.TD_Header
+{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.TD_Body
+{
+    height: auto;
+    width: auto;
+    /* background-color: white; */
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.TD_BtnDialogCloss
+{
+    cursor: pointer;
+    float: right;
+
+    font-weight: bolder;
+
+
+    margin-left: 25px;
+}
+
+.alert-danger {
+    border: red 1px solid;
+    border-radius: 10px;
+    background-color: pink;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ok_btn {
+    width: 50px;
+}
+
+.open_dir_dialog {
+    width: 700px;
+    height: 500px;
+}
+.open_dir_dialog .edit_btn {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+    border: none;
+    border-bottom: 4px solid;
+    align-content: start;
+    font-weight: bold;
+}
+.open_dir_dialog img {
+    height: 20px;
+    width: 20px;
+}
+.open_dir_dialog_file_manager {
+    flex-grow: 1;
+}
+.open_dir_dialog_toolbar {
+    height: var(--toolbar-width);
+}
+.open_dir_dialog_linklist {
+    width: 250px;
+    height: 480px;
+    padding-right: 5px;
+    margin-right: 5px;
+    border-right: 4px inset black;
+
+}
+.open_dir_dialog_filelist {
+    width: 100%;
+    height: 480px;
+}

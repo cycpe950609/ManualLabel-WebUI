@@ -1,0 +1,53 @@
+{
+  "name": "manuallabeling",
+  "version": "0.0.1-dev",
+  "description": "Label the missing points for NEWSLab experimence",
+  "main": "index.js",
+  "repository": "git@github.com:cycpe950609/ManualLabel-WebUI.git",
+  "author": "Cycpe950609 <cycpe950609@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ts/ --ext .ts",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:watch": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "lodash": "^4.17.21",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.2",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
+    "single-spa": "^5.9.4",
+    "snabbdom": "^3.5.1",
+    "typescript": "^4.7.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/register": "^7.18.6",
+    "@reduxjs/toolkit": "^1.9.0",
+    "@types/lodash": "^4.14.189",
+    "@types/redux-logger": "^3.0.9",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.19.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "prettier": "^2.7.1",
+    "remark-loader": "^5.0.0",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "packageManager": "yarn@3.6.3"
+}

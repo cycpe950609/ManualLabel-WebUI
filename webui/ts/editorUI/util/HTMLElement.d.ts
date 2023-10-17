@@ -1,0 +1,10 @@
+export declare const DIV: (className: string, children?: HTMLElement[] | HTMLElement | DocumentFragment) => HTMLDivElement;
+export declare const TABLE: (className: string, thead?: HTMLElement[] | HTMLElement | DocumentFragment, tbody?: HTMLElement[] | HTMLElement | DocumentFragment) => [HTMLTableElement, HTMLTableSectionElement];
+export declare const TR: (className: string, children?: HTMLElement[] | HTMLElement | DocumentFragment) => HTMLTableRowElement;
+export declare const TD: (children?: HTMLElement[] | HTMLElement | DocumentFragment | string) => HTMLTableCellElement;
+export declare const LABEL: (className: string, children?: HTMLElement[] | HTMLElement | DocumentFragment | string) => HTMLLabelElement;
+export declare const SPAN: (className: string, children: string) => HTMLSpanElement;
+export declare const CANVAS: (className: string) => HTMLCanvasElement;
+export declare const TEXT: (className: string) => HTMLInputElement;
+export declare const BUTTON: (className: string, children?: HTMLElement[] | HTMLElement | DocumentFragment | string) => HTMLElement;
+export declare const LI: (text: string) => HTMLLIElement;

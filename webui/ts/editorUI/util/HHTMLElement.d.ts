@@ -1,0 +1,12 @@
+import { VNode } from "snabbdom";
+export declare const HDIV: (className: string, children?: VNode | VNode[] | string) => VNode;
+export declare const HTABLE: (className: string, thead?: VNode | VNode[], tbody?: VNode | VNode[]) => VNode;
+export declare const HTR: (className: string, children?: VNode | VNode[]) => VNode;
+export declare const HTD: (children?: VNode | VNode[] | string) => VNode;
+export declare const HLABEL: (className: string, children?: VNode | VNode[] | string) => VNode;
+export declare const HSPAN: (className: string, children: string) => VNode;
+export declare const HCANVAS: (className: string) => VNode;
+export declare const HTEXT: (className: string, required?: boolean) => VNode;
+export declare const HBUTTON: (className: string, children: VNode | VNode[] | string, clickHandler: any) => VNode;
+export declare const HLI: (text: string) => VNode;
+export declare const HIMG: (className: string, src: string) => VNode;
